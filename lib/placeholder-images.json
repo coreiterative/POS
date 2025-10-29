@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "pizza-margherita",
+      "description": "Classic Margherita Pizza",
+      "imageUrl": "https://images.unsplash.com/photo-1624375251565-5294aaeda75d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwaXp6YSUyMGNoZWVzZXxlbnwwfHx8fDE3NjE2ODAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pizza cheese"
+    },
+    {
+      "id": "cheeseburger",
+      "description": "Juicy Cheeseburger with fries",
+      "imageUrl": "https://images.unsplash.com/photo-1623610934157-0fcb6d50e90f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidXJnZXIlMjBmcmllc3xlbnwwfHx8fDE3NjE2NjE0NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "burger fries"
+    },
+    {
+      "id": "carbonara-pasta",
+      "description": "Creamy Carbonara Pasta",
+      "imageUrl": "https://images.unsplash.com/photo-1632778129004-f142ce499b3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwYXN0YSUyMGRpc2h8ZW58MHx8fHwxNzYxNjc5ODc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pasta dish"
+    },
+    {
+      "id": "caesar-salad",
+      "description": "Fresh Caesar Salad",
+      "imageUrl": "https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYWxhZCUyMGJvd2x8ZW58MHx8fHwxNzYxNjcxNTUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "salad bowl"
+    },
+    {
+      "id": "chocolate-lava-cake",
+      "description": "Warm Chocolate Lava Cake",
+      "imageUrl": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2MTY3OTg3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate cake"
+    },
+    {
+      "id": "iced-coffee",
+      "description": "Refreshing Iced Coffee",
+      "imageUrl": "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpY2VkJTIwY29mZmVlfGVufDB8fHx8MTc2MTcyMTI1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iced coffee"
+    },
+    {
+      "id": "pepperoni-pizza",
+      "description": "Spicy Pepperoni Pizza",
+      "imageUrl": "https://images.unsplash.com/photo-1692737580547-b45bb4a02356?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXBwZXJvbmklMjBwaXp6YXxlbnwwfHx8fDE3NjE2ODI4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pepperoni pizza"
+    },
+    {
+      "id": "bacon-burger",
+      "description": "Smoky Bacon Burger",
+      "imageUrl": "https://images.unsplash.com/photo-1619290463528-d9b976320d87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YmFjb24lMjBidXJnZXJ8ZW58MHx8fHwxNzYxNjg3NzE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bacon burger"
+    }
+  ]
+}

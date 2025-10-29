@@ -1,0 +1,49 @@
+// @ts-nocheck
+'use server';
+
+/**
+ * @fileOverview Sales report generation flow using GenAI.
+ *
+ * - generateSalesReport - A function that generates a sales report for a specified time period.
+ * - GenerateSalesReportInput - The input type for the generateSalesReport function, including start and end dates.
+ * - GenerateSalesReportOutput - The return type for the generateSalesReport function, containing the sales report as a string.
+ */
+import {ai} from '@/ai/genkit';
+import {z} from 'zod';
+
+const GenerateSalesReportInputSchema = z.object({
+  startDate: z.string().describe('The start date for the sales report (YYYY-MM-DD).'),
+  endDate: z.string().describe('The end date for the sales report (YYYY-MM-DD).'),
+});
+export type GenerateSalesReportInput = z.infer<typeof GenerateSalesReportInputSchema>;
+
+const GenerateSalesReportOutputSchema = z.object({
+  report: z.string().describe('The generated sales report.'),
+});
+export type GenerateSalesReportOutput = z.infer<typeof GenerateSalesReportOutputSchema>;
+
+export async function generateSalesReport(input: GenerateSalesReportInput): Promise<GenerateSalesReportOutput> {
+  return generateSalesReportFlow(input);
+}
+
+const prompt = ai.definePrompt({
+  name: 'generateSalesReportPrompt',
+  input: {schema: GenerateSalesReportInputSchema},
+  output: {schema: GenerateSalesReportOutputSchema},
+  prompt: `You are an expert sales data analyst. Generate a sales report based on the provided start and end dates. Include key metrics such as total sales, best-selling items, and revenue breakdown by category. Format the report in a readable and concise manner.
+
+Start Date: {{{startDate}}}
+End Date: {{{endDate}}}`,
+});
+
+const generateSalesReportFlow = ai.defineFlow(
+  {
+    name: 'generateSalesReportFlow',
+    inputSchema: GenerateSalesReportInputSchema,
+    outputSchema: GenerateSalesReportOutputSchema,
+  },
+  async input => {
+    const {output} = await prompt(input);
+    return output!;
+  }
+);
